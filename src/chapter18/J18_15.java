@@ -2,7 +2,7 @@ package chapter18;
 /*   J18_15.java   */
 /*  Using Synchronized Method */
 
-class Global   // Global Class
+class Global18   // Global Class
  {
  void CallMe(String Msg) // Non- Synchronized Method
   {
@@ -19,13 +19,13 @@ class Global   // Global Class
  System.out.println("]");
  }
 }
-class Caller implements Runnable   // Caller Thread 
+class Caller18 implements Runnable   // Caller Thread 
 {
  String Msg;
  Global SyncObj;
  Thread Th;
  
-public Caller(Global Gb, String S)
+public Caller18(Global18 Gb, String S)
  {
  SyncObj = Gb;
  Msg = S;

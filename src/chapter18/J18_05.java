@@ -2,11 +2,11 @@ package chapter18;
 /*   J18_05.java   */
 /*   Example of Multi-Thread Program */
 /*   In implementing Runnable Interface   */
-class A implements Runnable   // Thread A
+class A05 implements Runnable   // Thread A
 {
 public void run()
  {
- for(int  i= 1; i<=5; i=i+2)
+ for(int  i= 1; i<=50; i=i+2)
    {
     System.out.println("Inside Thread A : i = " +i);
    }
@@ -14,11 +14,11 @@ public void run()
   }
 }  
 
-class B implements Runnable   // Thread B
+class B05 implements Runnable   // Thread B
 {
 public void run()
  {
-  for(int  j= 2; j<=6; j=j+2)
+  for(int  j= 2; j<=60; j=j+2)
    {
     System.out.println("Inside Thread B : j = " +j);                 
    }
@@ -30,10 +30,10 @@ public void run()
 {
  public static void main(String args[])
   {
-   A ObjA = new A();  // Creating Object of Thread A
+   A05 ObjA = new A05();  // Creating Object of Thread A
    Thread Th1 = new Thread(ObjA); 
-   B ObjB = new B();  // Creating Object of Thread B
 
+   B05 ObjB = new B05();  // Creating Object of Thread B
    Thread Th2 = new Thread(ObjB); 
    
    System.out.println("Starting Thread A:");
